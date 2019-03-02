@@ -65,7 +65,7 @@
           "roll": 0.43,
           "pitch": 0.3
         },
-        "comment": "This way looks good..",
+        "comment": "This road seems fine.",
         "gpsSensor": {
           "latitude": 50.8573828,
           "longitude": 4.3613522
@@ -77,6 +77,157 @@
     ]
   },
   {
+    "_id": 32111658,
+    "logs": [
+      {
+        "id": 321654101,
+        "typeOfLog": "BAD",
+        "time": 1551169721,
+        "distanceSensor": 28.34,
+        "photo": "https://i.imgur.com/AHYFn6Z.jpg",
+        "tiltSensor": {
+          "yawn": 0.14,
+          "roll": 0.81,
+          "pitch": 0.52
+        },
+        "comment": "This road is under construction.",
+        "gpsSensor": {
+          "latitude": 50.842747,
+          "longitude": 4.383235
+
+
+
+        },
+        "airSensor": {
+          "co2PPM": 78
+        }
+      },
+      // new
+      {
+    "_id": 32111658,
+    "logs": [
+      {
+        "id": 321654232,
+        "typeOfLog": "BAD",
+        "time": 1551169721,
+        "distanceSensor": 28.34,
+        "photo": "https://i.imgur.com/sowrAzn.jpg",
+        "tiltSensor": {
+          "yawn": 0.14,
+          "roll": 0.81,
+          "pitch": 0.52
+        },
+        "comment": "This road is under construction.",
+        "gpsSensor": {
+          "latitude": 51.050515,
+          "longitude": 3.709861
+
+         
+
+
+        },
+        "airSensor": {
+          "co2PPM": 78
+        }
+      },
+      {
+    "_id": 32111658,
+    "logs": [
+      {
+        "id": 321654535,
+        "typeOfLog": "BAD",
+        "time": 1551169721,
+        "distanceSensor": 28.34,
+        "photo": "https://i.imgur.com/AHYFn6Z.jpg",
+        "tiltSensor": {
+          "yawn": 0.14,
+          "roll": 0.81,
+          "pitch": 0.52
+        },
+        "comment": "This road is still under construction.",
+        "gpsSensor": {
+          "latitude": 51.051857,
+          "longitude": 3.70215835
+        },
+        "airSensor": {
+          "co2PPM": 78
+        }
+      },
+      {
+    "_id": 32111658,
+    "logs": [
+      {
+        "id": 321654101,
+        "typeOfLog": "SOS",
+        "time": 1551169721,
+        "distanceSensor": 28.34,
+        "photo": "https://i.imgur.com/SYSOcgc.jpg",
+        "tiltSensor": {
+          "yawn": 0.14,
+          "roll": 0.81,
+          "pitch": 0.52
+        },
+        "comment": "Emergency SOS signal.",
+        "gpsSensor": {
+          "latitude": 51.031903,
+          "longitude":  3.711194
+
+        },
+        "airSensor": {
+          "co2PPM": 78
+        }
+      },
+      {
+    "_id": 32111658,
+    "logs": [
+      {
+        "id": 321654101,
+        "typeOfLog": "GOOD",
+        "time": 1551169721,
+        "distanceSensor": 28.34,
+        "photo": "https://i.imgur.com/Q0LfCOB.jpg",
+        "tiltSensor": {
+          "yawn": 0.14,
+          "roll": 0.81,
+          "pitch": 0.52
+        },
+        "comment": "This road seems fine.",
+        "gpsSensor": {
+          "latitude": 51.061637,
+          "longitude": 3.693692
+         
+        },
+        "airSensor": {
+          "co2PPM": 78
+        }
+      },
+      {
+    "_id": 32111658,
+    "logs": [
+      {
+        "id": 321654101,
+        "typeOfLog": "BAD",
+        "time": 1551169721,
+        "distanceSensor": 28.34,
+        "photo": "https://i.imgur.com/AHYFn6Z.jpg",
+        "tiltSensor": {
+          "yawn": 0.14,
+          "roll": 0.81,
+          "pitch": 0.52
+        },
+        "comment": "This road is under construction.",
+        "gpsSensor": {
+          "latitude": 50.842747,
+          "longitude": 4.383235
+         
+
+
+        },
+        "airSensor": {
+          "co2PPM": 78
+        }
+      },
+      {
     "_id": 32111658,
     "logs": [
       {
