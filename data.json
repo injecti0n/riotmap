@@ -92,9 +92,6 @@
         },
         "comment": "This road is under construction.",
         "gpsSensor": {
-          // 50.842747, 4.383235
-
-
           "latitude": 50.842747,
           "longitude": 4.383235
         },
