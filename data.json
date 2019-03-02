@@ -121,6 +121,68 @@
         "airSensor": {
           "co2PPM": 78
         }
+      },
+      {
+        "id": 321654535,
+        "typeOfLog": "BAD",
+        "time": 1551169721,
+        "distanceSensor": 28.34,
+        "photo": "https://i.imgur.com/AHYFn6Z.jpg",
+        "tiltSensor": {
+          "yawn": 0.14,
+          "roll": 0.81,
+          "pitch": 0.52
+        },
+        "comment": "This road is still under construction.",
+        "gpsSensor": {
+          "latitude": 51.051857,
+          "longitude": 3.70215835
+        },
+        "airSensor": {
+          "co2PPM": 78
+        }
+      },
+      {
+        "id": 321654101,
+        "typeOfLog": "SOS",
+        "time": 1551169721,
+        "distanceSensor": 28.34,
+        "photo": "https://i.imgur.com/SYSOcgc.jpg",
+        "tiltSensor": {
+          "yawn": 0.14,
+          "roll": 0.81,
+          "pitch": 0.52
+        },
+        "comment": "Emergency SOS signal.",
+        "gpsSensor": {
+          "latitude": 51.031903,
+          "longitude":  3.711194
+
+        },
+        "airSensor": {
+          "co2PPM": 78
+        }
+      },
+      {
+        "id": 321654101,
+        "typeOfLog": "GOOD",
+        "time": 1551169721,
+        "distanceSensor": 28.34,
+        "photo": "https://i.imgur.com/Q0LfCOB.jpg",
+        "tiltSensor": {
+          "yawn": 0.14,
+          "roll": 0.81,
+          "pitch": 0.52
+        },
+        "comment": "This road seems fine.",
+        "gpsSensor": {
+          "latitude": 51.061637,
+          "longitude": 3.693692
+         
+        },
+        "airSensor": {
+          "co2PPM": 78
+        }
       }
     ]
   }
