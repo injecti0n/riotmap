@@ -120,10 +120,6 @@
         "gpsSensor": {
           "latitude": 51.050515,
           "longitude": 3.709861
-
-         
-
-
         },
         "airSensor": {
           "co2PPM": 78
