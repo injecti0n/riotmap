@@ -33,7 +33,7 @@
         "typeOfLog": "BAD",
         "time": 1549113892,
         "distanceSensor": 32.82,
-        "photo": "https://static-news.moneycontrol.com/static-mcnews/2017/09/bad-road-666x435.jpg",
+        "photo": "https://i.imgur.com/eIQL4ym.png",
         "tiltSensor": {
           "yawn": 0.65,
           "roll": 0.39,
@@ -59,15 +59,16 @@
         "typeOfLog": "GOOD",
         "time": 1549336521,
         "distanceSensor": 25.11,
+        "photo": "https://i.imgur.com/flquSWl.png",
         "tiltSensor": {
           "yawn": 0.58,
           "roll": 0.43,
           "pitch": 0.3
         },
-        "comment": "Id ipsum do magna tempor ipsum tempor irure.",
+        "comment": "This way looks good..",
         "gpsSensor": {
-          "latitude": 50.250202,
-          "longitude": 3.26814
+          "latitude": 50.8503841,
+          "longitude": 4.3294244
         },
         "airSensor": {
           "co2PPM": 74
@@ -80,18 +81,22 @@
     "logs": [
       {
         "id": 321654101,
-        "typeOfLog": "GOOD",
+        "typeOfLog": "BAD",
         "time": 1551169721,
         "distanceSensor": 28.34,
+        "photo": "https://i.imgur.com/AHYFn6Z.jpg",
         "tiltSensor": {
           "yawn": 0.14,
           "roll": 0.81,
           "pitch": 0.52
         },
-        "comment": "Nostrud cupidatat fugiat esse Lorem nulla consequat occaecat sint labore ut elit laboris.",
+        "comment": "This road is under construction.",
         "gpsSensor": {
-          "latitude": 50.704671,
-          "longitude": 3.359802
+          // 50.842747, 4.383235
+
+
+          "latitude": 50.842747,
+          "longitude": 4.383235
         },
         "airSensor": {
           "co2PPM": 78
