@@ -67,8 +67,8 @@
         },
         "comment": "This way looks good..",
         "gpsSensor": {
-          "latitude": 50.8503841,
-          "longitude": 4.3294244
+          "latitude": 50.8573828,
+          "longitude": 4.3613522
         },
         "airSensor": {
           "co2PPM": 74
@@ -94,6 +94,9 @@
         "gpsSensor": {
           "latitude": 50.842747,
           "longitude": 4.383235
+         
+
+
         },
         "airSensor": {
           "co2PPM": 78
