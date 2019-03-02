@@ -14,7 +14,7 @@ function initMap() {
     var geocoder = new google.maps.Geocoder;
     var infowindow = new google.maps.InfoWindow();
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 12,
+      zoom: 8,
       center: {lat: 50.850610, lng: 4.351009},
 
 
@@ -104,8 +104,6 @@ function initMap() {
     goodImage = 'img/good.png';
     sosImage = 'img/sos.png';
     unkownImage = 'img/unkown.png';
-    markers = []
-    
     
     filter = ["SOS SIGNAL", "BAD FEEDBACK", "GOOD FEEDBACK"]
 
@@ -119,11 +117,11 @@ function initMap() {
                     filter.splice(index, 1)
                 }
             }
+            filterData()
         })
-        filterData()    
-
     })
 
+    markers = []
     
     function filterData(){
         markers.map((marker, key) => {
