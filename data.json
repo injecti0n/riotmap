@@ -30,7 +30,7 @@
     "logs": [
       {
         "id": 321654101,
-        "typeOfLog": "GOOD",
+        "typeOfLog": "BAD",
         "time": 1549113892,
         "distanceSensor": 32.82,
         "photo": "/img/streetCapture/321654101.png",
