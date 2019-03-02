@@ -1,0 +1,58 @@
+{
+  "id": "321654",
+
+  "logs": [
+     {
+      "id": "321654101",
+      "typeOfLog": "BAD",
+      "distanceSensor": 30.22,
+      "tiltSensor": {
+        "yawn": 47.615694,
+        "roll": -122.3359976,
+        "pitch": 55.666
+      },
+      "comment": " ",
+      "gpsSensor": {
+        "latitude": 47.615694,
+        "longitude": -122.3359976
+      }
+    },
+     {
+      "id": "32165402",
+      "typeOfLog": "BAD",
+      "distanceSensor": 30.0,
+      "comment": " ",
+      "gpsSensor": {
+        "latitude": 47.615694,
+        "longitude": -122.3359976
+      }
+    },
+    {
+      "id": "321654103",
+      "typeOfLog": "GOOD",
+      "distanceSensor": 30.1,
+      "comment": " ",
+      "gpsSensor": {
+        "latitude": 47.615694,
+        "longitude": -122.3359976
+      }
+    },
+    {
+      "id": "321654104",
+      "typeOfLog": "BAD",
+        "distanceSensor": 30.01,
+        "airSensor": 55,
+        "comment": " ",
+        "gpsSensor": {
+          "latitude": 47.615694,
+          "longitude": -122.3359976
+        },
+        "tiltSensor": {
+          "yawn": 0.14,
+          "pitch": 0.40,
+          "roll": 0.98
+        }
+      }
+
+  ]
+}

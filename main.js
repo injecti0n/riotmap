@@ -10,6 +10,7 @@ function timeConverter(UNIX_timestamp){
     var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
     return time;
 }
+
 function initMap() {
     var geocoder = new google.maps.Geocoder;
     var infowindow = new google.maps.InfoWindow();
@@ -105,7 +106,7 @@ function initMap() {
     sosImage = 'img/sos.png';
     unkownImage = 'img/unkown.png';
     
-    filter = ["SOS SIGNAL", "BAD FEEDBACK", "GOOD FEEDBACK"]
+    filter = ["SOS", "BAD", "GOOD"]
 
     $("[type='checkbox']").map((key, element) => {
         $(element).click(() => {
@@ -128,56 +129,57 @@ function initMap() {
             marker.setVisible(false)
 
         })
-        filter.map((feedback, key) => {
+        filter.map((typeOfLog, key) => {
             markers.map((marker, key) => {
-                if (feedback == marker.category) {
+                if (typeOfLog == marker.category) {
                     marker.setVisible(true)
+                    if (marker.getAnimation() != null) {
+                        marker.setAnimation(marker.getAnimation());
+                      }
                 }
             })
         })
     }
 
     $.getJSON( "data.json", function( data ) {
-        data.map(reg => {
-            if (reg.feedback == "SOS SIGNAL") {
-                image = sosImage
-                animation = google.maps.Animation.BOUNCE
-                className = "sos"
-            } else if (reg.feedback == "BAD FEEDBACK") {
-                image = badImage
-                animation = google.maps.Animation.DROP
-                className = "bad"
-            } else if (reg.feedback == "GOOD FEEDBACK") {
-                image = goodImage
-                animation = false
-                className = "good"
-            } else {
-                image = unkownImage
-                animation = false
-            }
-
-            feedbackMarker = new google.maps.Marker({
-                position: {lat: reg.location.lat[0], lng: reg.location.lng[0]},
-                map: map,
-                icon: image,
-                animation: animation,
-                category: reg.feedback
+        data.map(device => {
+            device.logs.map(reg => {
+                if (reg.typeOfLog == "SOS") {
+                    image = sosImage
+                    animation = google.maps.Animation.BOUNCE
+                } else if (reg.typeOfLog == "BAD") {
+                    image = badImage
+                    animation = google.maps.Animation.DROP
+                } else if (reg.typeOfLog == "GOOD") {
+                    image = goodImage
+                    animation = false
+                } else {
+                    image = unkownImage
+                    animation = false
+                }
+    
+                typeOfLogMarker = new google.maps.Marker({
+                    position: {lat: reg.gpsSensor.latitude, lng: reg.gpsSensor.longitude},
+                    map: map,
+                    icon: image,
+                    animation: animation,
+                    category: reg.typeOfLog
+                    });
+                
+                markers.push(typeOfLogMarker)
+    
+                google.maps.event.addListener(typeOfLogMarker, 'click', function(event) {
+                    geocoder.geocode({'location': {lat: event.latLng.lat(), lng: event.latLng.lng()}}, (results, status) => {
+                        if (status === 'OK' && results[0]) {
+                            address = results[0].formatted_address
+                        } else {
+                            address = 'unkown'
+                        }
+                        infowindow.setContent(`<div><h2>${reg.typeOfLog}</h2><b>User ID: ${reg.id}</b><p><b>Location: </b>lat:${reg.gpsSensor.latitude},lng:${reg.gpsSensor.longitude}</p><p>${address}</p><p><b>${timeConverter(reg.time)}</b></p><p>${reg.comment}</p><h3>Sensors</h3><p><b>Tilt Sensor: </b> yawn: ${reg.tiltSensor.yawn} roll: ${reg.tiltSensor.roll} pitch: ${reg.tiltSensor.pitch}</p><p><b>Air Sensor: </b>${reg.airSensor.co2PPM}</p><p><b>Distance: </b>${reg.distanceSensor}</p></div>`);
+                        infowindow.open(map, this);
+                    })
                 });
-            
-            markers.push(feedbackMarker)
-
-            google.maps.event.addListener(feedbackMarker, 'click', function(event) {
-                geocoder.geocode({'location': {lat: event.latLng.lat(), lng: event.latLng.lng()}}, (results, status) => {
-                    if (status === 'OK' && results[0]) {
-                        address = results[0].formatted_address
-                    } else {
-                        address = 'unkown'
-                    }
-                    infowindow.setContent(`<div><h2>${reg.feedback}</h2><b>User ID: ${reg.user_id}</b><p><b>Location: </b>lat:${reg.location.lat},lng:${reg.location.lng}</p><p>${address}</p><p>${reg.description}</p><p><b>${timeConverter(reg.time)}</b></p><img width="320px" src="${reg.photo}"><h3>Sensors</h3><p><b>Light Sensor: </b>${reg.sensors.light_sensor}</p><p><b>Ultrasonic Sensor: </b>${reg.sensors.ultrasonic_sensor}</p><p><b>Accelerometer: </b>${reg.sensors.accelerometer}</p></div>`);
-                    infowindow.open(map, this);
-                })
-            });
-            
+            })
         });
     })
 
