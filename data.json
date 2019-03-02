@@ -33,7 +33,7 @@
         "typeOfLog": "BAD",
         "time": 1549113892,
         "distanceSensor": 32.82,
-        "photo": "/img/streetCapture/test.png",
+        "photo": "https://static-news.moneycontrol.com/static-mcnews/2017/09/bad-road-666x435.jpg",
         "tiltSensor": {
           "yawn": 0.65,
           "roll": 0.39,
