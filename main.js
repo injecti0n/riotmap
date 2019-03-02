@@ -175,7 +175,7 @@ function initMap() {
                         } else {
                             address = 'unkown'
                         }
-                        infowindow.setContent(`<div><h2>${reg.typeOfLog}</h2><b>User ID: ${reg.id}</b><p><b>Location: </b>lat:${reg.gpsSensor.latitude},lng:${reg.gpsSensor.longitude}</p><p>${address}</p><p><b>${timeConverter(reg.time)}</b></p><img width="320px" src="${reg.photo}"><p>${reg.comment}</p><h3>Sensors</h3><p><b>Tilt Sensor: </b> yawn: ${reg.tiltSensor.yawn} roll: ${reg.tiltSensor.roll} pitch: ${reg.tiltSensor.pitch}</p><p><b>Air Sensor: </b>${reg.airSensor.co2PPM}</p><p><b>Distance: </b>${reg.distanceSensor}</p></div>`);
+                        infowindow.setContent(`<div style="padding-right: 0px;padding-bottom: 0px;width: 2%;max-width: 654px;max-height:222px;"><h2>${reg.typeOfLog}</h2><b>User ID: ${reg.id}</b><p><b>Location: </b>lat:${reg.gpsSensor.latitude},lng:${reg.gpsSensor.longitude}</p><p>${address}</p><p><b>${timeConverter(reg.time)}</b></p><img width="100%" src="${reg.photo}"><p>${reg.comment}</p><h3>Sensors</h3><p><b>Tilt Sensor: </b> yawn: ${reg.tiltSensor.yawn} roll: ${reg.tiltSensor.roll} pitch: ${reg.tiltSensor.pitch}</p><p><b>Air Sensor: </b>${reg.airSensor.co2PPM}</p><p><b>Distance: </b>${reg.distanceSensor}</p></div>`);
                         infowindow.open(map, this);
                     })
                 });
