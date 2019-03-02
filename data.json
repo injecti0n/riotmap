@@ -101,6 +101,33 @@
         "airSensor": {
           "co2PPM": 78
         }
+      },
+      {
+    "_id": 32111658,
+    "logs": [
+      {
+        "id": 321654232,
+        "typeOfLog": "BAD",
+        "time": 1551169721,
+        "distanceSensor": 28.34,
+        "photo": "https://i.imgur.com/sowrAzn.jpg",
+        "tiltSensor": {
+          "yawn": 0.14,
+          "roll": 0.81,
+          "pitch": 0.52
+        },
+        "comment": "This road is under construction.",
+        "gpsSensor": {
+          "latitude": 51.050515,
+          "longitude": 3.709861
+
+         
+
+
+        },
+        "airSensor": {
+          "co2PPM": 78
+        }
       }
     ]
   }
