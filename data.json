@@ -6,7 +6,7 @@
       {
         "id": 321654102,
         "typeOfLog": "BAD",
-        "time": 1551487906,
+        "time": 1551533092,
         "distanceSensor": 20.51,
         "photo": "img/streetCapture/321654102.png",
         "tiltSensor": {
@@ -14,7 +14,7 @@
           "roll": 0.1,
           "pitch": 0.91
         },
-        "comment": "Elit ea deserunt amet aliquip quis laborum duis commodo ullamco ipsum magna ipsum aute.",
+        "comment": "red container is blocking the way",
         "gpsSensor": {
           "latitude": 50.843276,
           "longitude": 4.347564
@@ -31,17 +31,19 @@
       {
         "id": 321654101,
         "typeOfLog": "GOOD",
-        "time": 1550353224,
+        "time": 1549113892,
         "distanceSensor": 32.82,
+        "photo": "/img/streetCapture/321654101.png",
         "tiltSensor": {
           "yawn": 0.65,
           "roll": 0.39,
           "pitch": 0.78
         },
-        "comment": "Reprehenderit fugiat aliquip Lorem sint et nulla fugiat cillum ullamco consectetur do do quis.",
+        "comment": "This way is under construction.",
         "gpsSensor": {
-          "latitude": 51.05266,
-          "longitude": 4.470283
+          
+          "latitude": 50.8573828,
+          "longitude": 4.3613522
         },
         "airSensor": {
           "co2PPM": 89
